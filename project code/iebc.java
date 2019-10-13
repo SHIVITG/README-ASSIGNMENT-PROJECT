@@ -1,15 +1,9 @@
-//import Scanner class here
 import java.util.Scanner;
-//Create login that deals with logging in to the system
-class Login{
-  //declare and instantiate variables that will show the number of login attempts
+class LoginUser{
   int trial=1, remaining;
   //this is a constructor
-  Login(){
-    //Outputs the name of the system
+  LoginUser(){
     System.out.println("\t\tIEBC Registration System");
-    System.out.println("============================================================");
-    //calls the method login_sys() so that it can run the code
     login_sys();
   }
   //this is the method itself
@@ -198,7 +192,6 @@ class Register{
       System.out.println("Constituency: "+consti);
       System.out.println("County: "+count);
       System.out.println("Gender: "+gen+"\n");
-      System.out.println("==============================================");
       System.out.println("\nIs this information correct?(y/n)");
       Scanner input = new Scanner(System.in);
       change=input.nextLine();
@@ -206,9 +199,7 @@ class Register{
       changeinfo();
       }
       else if(change.equals("y")){
-      System.out.println("\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
       System.out.println("SUCCESS! information is being uploaded!");
-      System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
       exitStrategy();
       }
   }
@@ -226,9 +217,6 @@ class Register{
       }
       else if(state.equals("E")){
         looper=0;
-        System.out.println("==========================");
-        System.out.println("©2017 Cryosoft Corporation");
-        System.out.println("==========================");
       }
       else{
         System.out.println("\nSorry The input is invalid....\n");
